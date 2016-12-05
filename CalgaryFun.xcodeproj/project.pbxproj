@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A0709911DF5A48100CF5005 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0709881DF5A48100CF5005 /* GeoFire.m */; };
+		0A0709921DF5A48100CF5005 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A07098A1DF5A48100CF5005 /* GFBase32Utils.m */; };
+		0A0709931DF5A48100CF5005 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A07098C1DF5A48100CF5005 /* GFGeoHash.m */; };
+		0A0709941DF5A48100CF5005 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A07098E1DF5A48100CF5005 /* GFGeoHashQuery.m */; };
+		0A0709951DF5A48100CF5005 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0709901DF5A48100CF5005 /* GFQuery.m */; };
+		0A8BD72F1DF59A5700E4DCAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8BD72E1DF59A5700E4DCAC /* AppDelegate.swift */; };
+		0A8BD7311DF59A5700E4DCAC /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8BD7301DF59A5700E4DCAC /* FeedVC.swift */; };
+		0A8BD7341DF59A5700E4DCAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8BD7321DF59A5700E4DCAC /* Main.storyboard */; };
+		0A8BD7361DF59A5700E4DCAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8BD7351DF59A5700E4DCAC /* Assets.xcassets */; };
+		0A8BD7391DF59A5700E4DCAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8BD7371DF59A5700E4DCAC /* LaunchScreen.storyboard */; };
+		0A8BD7411DF59E8600E4DCAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A8BD7401DF59E8600E4DCAC /* GoogleService-Info.plist */; };
+		8D165EE69C86508D430D8319 /* Pods_CalgaryFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D755847179F2DBE9C0F4C6 /* Pods_CalgaryFun.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A0709811DF5A48100CF5005 /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
+		0A0709821DF5A48100CF5005 /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
+		0A0709831DF5A48100CF5005 /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
+		0A0709841DF5A48100CF5005 /* GFRegionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRegionQuery.h; sourceTree = "<group>"; };
+		0A0709851DF5A48100CF5005 /* GeoFire-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire-Prefix.pch"; sourceTree = "<group>"; };
+		0A0709871DF5A48100CF5005 /* GeoFire+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire+Private.h"; sourceTree = "<group>"; };
+		0A0709881DF5A48100CF5005 /* GeoFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFire.m; sourceTree = "<group>"; };
+		0A0709891DF5A48100CF5005 /* GFBase32Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBase32Utils.h; sourceTree = "<group>"; };
+		0A07098A1DF5A48100CF5005 /* GFBase32Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBase32Utils.m; sourceTree = "<group>"; };
+		0A07098B1DF5A48100CF5005 /* GFGeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHash.h; sourceTree = "<group>"; };
+		0A07098C1DF5A48100CF5005 /* GFGeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHash.m; sourceTree = "<group>"; };
+		0A07098D1DF5A48100CF5005 /* GFGeoHashQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHashQuery.h; sourceTree = "<group>"; };
+		0A07098E1DF5A48100CF5005 /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
+		0A07098F1DF5A48100CF5005 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
+		0A0709901DF5A48100CF5005 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
+		0A0709991DF5A56C00CF5005 /* CalgaryFun-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CalgaryFun-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A8BD72B1DF59A5700E4DCAC /* CalgaryFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalgaryFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A8BD72E1DF59A5700E4DCAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A8BD7301DF59A5700E4DCAC /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		0A8BD7331DF59A5700E4DCAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A8BD7351DF59A5700E4DCAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A8BD7381DF59A5700E4DCAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A8BD73A1DF59A5700E4DCAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8BD7401DF59E8600E4DCAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C1C04EA1D32FB824AB448711 /* Pods-CalgaryFun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalgaryFun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalgaryFun/Pods-CalgaryFun.debug.xcconfig"; sourceTree = "<group>"; };
+		C5D755847179F2DBE9C0F4C6 /* Pods_CalgaryFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalgaryFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F75BC0C15A101F73CE9DD4 /* Pods-CalgaryFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalgaryFun.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalgaryFun/Pods-CalgaryFun.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A8BD7281DF59A5700E4DCAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D165EE69C86508D430D8319 /* Pods_CalgaryFun.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A07097F1DF5A48100CF5005 /* GeoFire */ = {
+			isa = PBXGroup;
+			children = (
+				0A0709801DF5A48100CF5005 /* API */,
+				0A0709851DF5A48100CF5005 /* GeoFire-Prefix.pch */,
+				0A0709861DF5A48100CF5005 /* Implementation */,
+			);
+			path = GeoFire;
+			sourceTree = "<group>";
+		};
+		0A0709801DF5A48100CF5005 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0A0709811DF5A48100CF5005 /* GeoFire.h */,
+				0A0709821DF5A48100CF5005 /* GFCircleQuery.h */,
+				0A0709831DF5A48100CF5005 /* GFQuery.h */,
+				0A0709841DF5A48100CF5005 /* GFRegionQuery.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		0A0709861DF5A48100CF5005 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				0A0709871DF5A48100CF5005 /* GeoFire+Private.h */,
+				0A0709881DF5A48100CF5005 /* GeoFire.m */,
+				0A0709891DF5A48100CF5005 /* GFBase32Utils.h */,
+				0A07098A1DF5A48100CF5005 /* GFBase32Utils.m */,
+				0A07098B1DF5A48100CF5005 /* GFGeoHash.h */,
+				0A07098C1DF5A48100CF5005 /* GFGeoHash.m */,
+				0A07098D1DF5A48100CF5005 /* GFGeoHashQuery.h */,
+				0A07098E1DF5A48100CF5005 /* GFGeoHashQuery.m */,
+				0A07098F1DF5A48100CF5005 /* GFQuery+Private.h */,
+				0A0709901DF5A48100CF5005 /* GFQuery.m */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		0A8BD7221DF59A5700E4DCAC = {
+			isa = PBXGroup;
+			children = (
+				0A8BD72D1DF59A5700E4DCAC /* CalgaryFun */,
+				0A8BD72C1DF59A5700E4DCAC /* Products */,
+				B96809AC0DA2CEE996793D05 /* Pods */,
+				F5604CA07B221ACFB3016CDE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0A8BD72C1DF59A5700E4DCAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A8BD72B1DF59A5700E4DCAC /* CalgaryFun.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A8BD72D1DF59A5700E4DCAC /* CalgaryFun */ = {
+			isa = PBXGroup;
+			children = (
+				0A07097F1DF5A48100CF5005 /* GeoFire */,
+				0A8BD72E1DF59A5700E4DCAC /* AppDelegate.swift */,
+				0A8BD7301DF59A5700E4DCAC /* FeedVC.swift */,
+				0A8BD7321DF59A5700E4DCAC /* Main.storyboard */,
+				0A8BD7351DF59A5700E4DCAC /* Assets.xcassets */,
+				0A8BD7371DF59A5700E4DCAC /* LaunchScreen.storyboard */,
+				0A8BD7401DF59E8600E4DCAC /* GoogleService-Info.plist */,
+				0A8BD73A1DF59A5700E4DCAC /* Info.plist */,
+				0A0709991DF5A56C00CF5005 /* CalgaryFun-Bridging-Header.h */,
+			);
+			path = CalgaryFun;
+			sourceTree = "<group>";
+		};
+		B96809AC0DA2CEE996793D05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1C04EA1D32FB824AB448711 /* Pods-CalgaryFun.debug.xcconfig */,
+				F2F75BC0C15A101F73CE9DD4 /* Pods-CalgaryFun.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F5604CA07B221ACFB3016CDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5D755847179F2DBE9C0F4C6 /* Pods_CalgaryFun.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A8BD72A1DF59A5700E4DCAC /* CalgaryFun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A8BD73D1DF59A5700E4DCAC /* Build configuration list for PBXNativeTarget "CalgaryFun" */;
+			buildPhases = (
+				39AC38F0EBD6F6D74B82321E /* [CP] Check Pods Manifest.lock */,
+				0A8BD7271DF59A5700E4DCAC /* Sources */,
+				0A8BD7281DF59A5700E4DCAC /* Frameworks */,
+				0A8BD7291DF59A5700E4DCAC /* Resources */,
+				19B5AA1491C88FDEB8CA4159 /* [CP] Embed Pods Frameworks */,
+				8CCCDD9EDE014E99A59FEE1B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalgaryFun;
+			productName = CalgaryFun;
+			productReference = 0A8BD72B1DF59A5700E4DCAC /* CalgaryFun.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A8BD7231DF59A5700E4DCAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Steve Mecking";
+				TargetAttributes = {
+					0A8BD72A1DF59A5700E4DCAC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2AAMEURGQN;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0A8BD7261DF59A5700E4DCAC /* Build configuration list for PBXProject "CalgaryFun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A8BD7221DF59A5700E4DCAC;
+			productRefGroup = 0A8BD72C1DF59A5700E4DCAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A8BD72A1DF59A5700E4DCAC /* CalgaryFun */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A8BD7291DF59A5700E4DCAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A8BD7391DF59A5700E4DCAC /* LaunchScreen.storyboard in Resources */,
+				0A8BD7411DF59E8600E4DCAC /* GoogleService-Info.plist in Resources */,
+				0A8BD7361DF59A5700E4DCAC /* Assets.xcassets in Resources */,
+				0A8BD7341DF59A5700E4DCAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19B5AA1491C88FDEB8CA4159 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalgaryFun/Pods-CalgaryFun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39AC38F0EBD6F6D74B82321E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8CCCDD9EDE014E99A59FEE1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalgaryFun/Pods-CalgaryFun-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A8BD7271DF59A5700E4DCAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0709921DF5A48100CF5005 /* GFBase32Utils.m in Sources */,
+				0A8BD7311DF59A5700E4DCAC /* FeedVC.swift in Sources */,
+				0A0709931DF5A48100CF5005 /* GFGeoHash.m in Sources */,
+				0A8BD72F1DF59A5700E4DCAC /* AppDelegate.swift in Sources */,
+				0A0709911DF5A48100CF5005 /* GeoFire.m in Sources */,
+				0A0709941DF5A48100CF5005 /* GFGeoHashQuery.m in Sources */,
+				0A0709951DF5A48100CF5005 /* GFQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0A8BD7321DF59A5700E4DCAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A8BD7331DF59A5700E4DCAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A8BD7371DF59A5700E4DCAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A8BD7381DF59A5700E4DCAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A8BD73B1DF59A5700E4DCAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A8BD73C1DF59A5700E4DCAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A8BD73E1DF59A5700E4DCAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1C04EA1D32FB824AB448711 /* Pods-CalgaryFun.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2AAMEURGQN;
+				INFOPLIST_FILE = CalgaryFun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mecks.CalgaryFun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CalgaryFun/CalgaryFun-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0A8BD73F1DF59A5700E4DCAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2F75BC0C15A101F73CE9DD4 /* Pods-CalgaryFun.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2AAMEURGQN;
+				INFOPLIST_FILE = CalgaryFun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mecks.CalgaryFun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CalgaryFun/CalgaryFun-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A8BD7261DF59A5700E4DCAC /* Build configuration list for PBXProject "CalgaryFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A8BD73B1DF59A5700E4DCAC /* Debug */,
+				0A8BD73C1DF59A5700E4DCAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A8BD73D1DF59A5700E4DCAC /* Build configuration list for PBXNativeTarget "CalgaryFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A8BD73E1DF59A5700E4DCAC /* Debug */,
+				0A8BD73F1DF59A5700E4DCAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A8BD7231DF59A5700E4DCAC /* Project object */;
+}

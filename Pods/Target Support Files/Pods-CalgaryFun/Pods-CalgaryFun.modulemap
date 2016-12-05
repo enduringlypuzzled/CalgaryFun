@@ -1,0 +1,6 @@
+framework module Pods_CalgaryFun {
+  umbrella header "Pods-CalgaryFun-umbrella.h"
+
+  export *
+  module * { export * }
+}
