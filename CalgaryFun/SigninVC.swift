@@ -8,18 +8,22 @@
 
 import UIKit
 
-class FeedVC: UIViewController {
+class SigninVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    
+              print("steve: Hellow")
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        performSegue(withIdentifier: "GotoMap", sender: nil)
+    
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+   
 
 }
 
