@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import FirebaseDatabase
 
 
 class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
@@ -17,11 +18,18 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     var mapHasCenteredOnce = false;
     
+    //GEOFIRE
+    var geoFire: GeoFire!
+    var geoFireRef: FIRDatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
         mapView.userTrackingMode = MKUserTrackingMode.follow
-        // Do any additional setup after loading the view.
+
+        //Refer to a firebase database reference
+        geoFireRef = FIRDatabase.database().reference()
+        geoFire = GeoFire(firebaseRef:geoFireRef)
     }
     
     
@@ -71,6 +79,35 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
             
         }
     }
+
+    
+    //Show Custom Annotations on map near user's location
+    func showSightingsOnMap(location: CLLocation) {
+        
+        let circleQuery = geoFire!.query(at: location, withRadius: 2.5)
+        
+        _ = circleQuery?.observe(GFEventType.keyEntered, with: { (key, location) in
+         
+            //make sure a key and a location exists
+            if let key = key, let location = location {
+                let anno = CustomAnnotation(coordinate: location.coordinate, customNumber: Int(key)!)
+                self.mapView.addAnnotation(anno)
+            }
+        })
+    }
+    
+    
+    
+    
+
+    /*create a Custom Location
+    func createSighting(forLocation: CLLocation, withPokemon pokeId:int) {
+        
+        geoFire.setLocation(location, forKey: "\(customid)")
+    }
+ 
+    */
+
     
    /* //Create custom annotation for the user
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
