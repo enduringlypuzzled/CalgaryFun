@@ -98,15 +98,6 @@ withCompletionBlock:(GFCompletionBlock)block;
  */
 - (void)removeKey:(NSString *)key withCompletionBlock:(GFCompletionBlock)block;
 
-/**
- * Gets the current location for a key in GeoFire and calls the callback with the location or nil if there is no
- * location for the key in GeoFire. If an error occurred, the callback will be called with the error and location
- * will be nil.
- *
- * @param key The key to observe the location for
- * @param callback The callback that is called for the current location
- * @return
- */
 - (void)getLocationForKey:(NSString *)key
              withCallback:(GFCallbackBlock)callback;
 

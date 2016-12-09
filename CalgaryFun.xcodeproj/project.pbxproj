@@ -109,8 +109,6 @@
 		0A88FE2D1DF726D6006D0172 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0A8BD7301DF59A5700E4DCAC /* SigninVC.swift */,
-				0A88FE301DF7282E006D0172 /* MapVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -118,6 +116,8 @@
 		0A88FE2E1DF726DC006D0172 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0A8BD7301DF59A5700E4DCAC /* SigninVC.swift */,
+				0A88FE301DF7282E006D0172 /* MapVC.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";

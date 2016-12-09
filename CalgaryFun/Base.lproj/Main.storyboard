@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the login screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iK-11-F8z">
@@ -44,19 +44,29 @@
                         <viewControllerLayoutGuide type="bottom" id="cNd-9t-UoD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="66B-lH-kaT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UcJ-Md-XmL">
-                                <frame key="frameInset" width="1000" height="1000"/>
-                            </mapView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UcJ-Md-XmL"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWt-tx-qRS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7Ol-MO-wnF"/>
+                                    <constraint firstAttribute="width" constant="50" id="Bce-Lr-TIp"/>
+                                </constraints>
+                                <state key="normal" image="pokeball"/>
+                                <connections>
+                                    <action selector="spotRandomPokemon:" destination="gnt-bV-SBJ" eventType="touchUpInside" id="zeg-2h-h15"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.42745098040000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="UcJ-Md-XmL" firstAttribute="leading" secondItem="66B-lH-kaT" secondAttribute="leading" id="2I5-t7-3D7"/>
-                            <constraint firstItem="UcJ-Md-XmL" firstAttribute="top" secondItem="66B-lH-kaT" secondAttribute="top" id="Nqw-iP-8dv"/>
-                            <constraint firstAttribute="trailing" secondItem="UcJ-Md-XmL" secondAttribute="trailing" id="WYi-Fe-CNl"/>
-                            <constraint firstItem="cNd-9t-UoD" firstAttribute="top" secondItem="UcJ-Md-XmL" secondAttribute="bottom" constant="150" id="p4F-5p-ycV"/>
+                            <constraint firstItem="UcJ-Md-XmL" firstAttribute="leading" secondItem="66B-lH-kaT" secondAttribute="leading" id="5ah-Ey-tDR"/>
+                            <constraint firstItem="bWt-tx-qRS" firstAttribute="leading" secondItem="66B-lH-kaT" secondAttribute="leading" constant="9" id="7GN-0Q-mnR"/>
+                            <constraint firstItem="cNd-9t-UoD" firstAttribute="top" secondItem="bWt-tx-qRS" secondAttribute="bottom" constant="20" id="Jjo-zQ-Ykq"/>
+                            <constraint firstItem="UcJ-Md-XmL" firstAttribute="top" secondItem="66B-lH-kaT" secondAttribute="top" id="afJ-Ja-EbP"/>
+                            <constraint firstAttribute="trailing" secondItem="UcJ-Md-XmL" secondAttribute="trailing" id="szK-TN-mCE"/>
+                            <constraint firstItem="cNd-9t-UoD" firstAttribute="top" secondItem="UcJ-Md-XmL" secondAttribute="bottom" id="utM-Tt-g5U"/>
                         </constraints>
                     </view>
                     <connections>
@@ -65,7 +75,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yR-6b-EgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853" y="124"/>
+            <point key="canvasLocation" x="852" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pokeball" width="97" height="96"/>
+    </resources>
 </document>
