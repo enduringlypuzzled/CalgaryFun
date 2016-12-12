@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SigninVC: UIViewController {
+class TableVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class SigninVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        performSegue(withIdentifier: "GotoMap", sender: nil)
+        //performSegue(withIdentifier: "GotoMap", sender: nil)
     
     }
 

@@ -14,6 +14,7 @@ import FirebaseDatabase
 class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var mapLabel: UILabel!
     
     let locationManager = CLLocationManager()
     var mapHasCenteredOnce = false;
@@ -89,9 +90,11 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         _ = circleQuery?.observe(GFEventType.keyEntered, with: {(key, location) in
             
             if let key = key, let location = location {
-                let anno = CustomAnnotation(coordinate: location.coordinate, pokemonNumber: Int(key)!)
+                let anno = CustomAnnotation(coordinate: location.coordinate, customNumber: Int(key)!)
                 self.mapView.addAnnotation(anno)
+                print("anno : \(anno.customName)")
                 
+        
             }
             
             
@@ -139,17 +142,17 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     
     //Set Location whenever you see a Pokemon and set the GPS Location
-    func createSighting(forLocation location: CLLocation, withPokemon pokeId:Int){
-        geoFire.setLocation(location, forKey: "\(pokeId)")
-        print("pokeid: \(pokeId)")
+    func createSighting(forLocation location: CLLocation, withPlace parkId:Int){
+        geoFire.setLocation(location, forKey: "\(parkId)")
+        print("pokeid: \(location)")
     }
 
 
    
-    //Create custom annotation for the user
+    //Create custom annotation for the user and placemarks
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
-        let annoIdentifier = "parks"
+        let annoIdentifier = "places"
         var annotationView:MKAnnotationView?
         
         if annotation.isKind(of: MKUserLocation.self){
@@ -167,7 +170,7 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         
         if let annotationView = annotationView, let anno = annotation as? CustomAnnotation{
             annotationView.canShowCallout = true
-            annotationView.image = UIImage(named: "\(anno.pokemonNumber)")
+            annotationView.image = UIImage(named: "\(anno.customNumber)")
             let btn = UIButton()
             btn.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
             btn.setImage(UIImage(named:"map"), for: .normal)
@@ -181,7 +184,7 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
        let loc = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
         let rand = arc4random_uniform(5) + 1
         
-        createSighting(forLocation: loc, withPokemon: Int(rand))
+        createSighting(forLocation: loc, withPlace: Int(rand))
         
         print("BUTTON PUSHED")
     }
