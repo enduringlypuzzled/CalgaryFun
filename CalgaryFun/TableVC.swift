@@ -8,14 +8,13 @@
 
 import UIKit
 
-class TableVC: UIViewController {
+class TableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     
-              print("steve: Hellow")
-        
+   override func viewDidLoad() {
+        super.viewDidLoad()
+        tableview.delegate = self
+        tableview.dataSource = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -23,6 +22,22 @@ class TableVC: UIViewController {
     
     }
 
+    
+    //Tableivew stuff
+    @IBOutlet weak var tableview: UITableView!
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
+    }
+    
    
 
 }

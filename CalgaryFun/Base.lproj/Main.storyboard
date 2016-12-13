@@ -44,14 +44,14 @@
                                     <constraint firstAttribute="height" constant="65" id="dx0-w7-hb5"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="104" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="edi-Gn-pe4">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="104" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="edi-Gn-pe4">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="104" id="9cV-6I-XCq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="104" id="9cV-6I-XCq" customClass="PostCell" customModule="CalgaryFun" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="104"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9cV-6I-XCq" id="C17-yk-TZM">
-                                            <frame key="frameInset" width="320" height="103"/>
+                                            <frame key="frameInset" width="320" height="104"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OoR-ck-Olt">
@@ -88,6 +88,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3AD-ZU-b8o">
+                                                            <color key="backgroundColor" red="1" green="1" blue="0.21953649328859057" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="50" id="MlO-rp-a0S"/>
                                                                 <constraint firstAttribute="height" constant="50" id="XhN-CO-4aG"/>
@@ -96,14 +97,14 @@
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.95870910234899331" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
+                                                        <constraint firstItem="3AD-ZU-b8o" firstAttribute="top" secondItem="GDQ-fy-5du" secondAttribute="bottom" constant="4" id="051-hu-HiU"/>
                                                         <constraint firstItem="egC-jp-wlM" firstAttribute="top" secondItem="OoR-ck-Olt" secondAttribute="top" constant="8" id="4Tf-73-b87"/>
-                                                        <constraint firstAttribute="trailing" secondItem="3AD-ZU-b8o" secondAttribute="trailing" id="5Tg-OL-5uY"/>
-                                                        <constraint firstItem="3AD-ZU-b8o" firstAttribute="top" secondItem="OoR-ck-Olt" secondAttribute="top" id="7np-nT-iNT"/>
                                                         <constraint firstItem="puq-N1-CbI" firstAttribute="centerX" secondItem="OoR-ck-Olt" secondAttribute="centerX" id="Kj5-Pv-dhB"/>
                                                         <constraint firstItem="puq-N1-CbI" firstAttribute="top" secondItem="YFk-Kp-yiT" secondAttribute="bottom" constant="8" id="Ljn-ip-waP"/>
                                                         <constraint firstItem="GDQ-fy-5du" firstAttribute="top" secondItem="OoR-ck-Olt" secondAttribute="top" id="PXP-Os-uNA"/>
                                                         <constraint firstItem="egC-jp-wlM" firstAttribute="centerX" secondItem="OoR-ck-Olt" secondAttribute="centerX" id="Q5Q-eU-WdB"/>
                                                         <constraint firstItem="GDQ-fy-5du" firstAttribute="leading" secondItem="OoR-ck-Olt" secondAttribute="leading" id="eCG-QT-s7t"/>
+                                                        <constraint firstItem="3AD-ZU-b8o" firstAttribute="leading" secondItem="OoR-ck-Olt" secondAttribute="leading" id="hnc-zN-z6d"/>
                                                         <constraint firstItem="YFk-Kp-yiT" firstAttribute="centerX" secondItem="OoR-ck-Olt" secondAttribute="centerX" id="nd2-to-8dB"/>
                                                         <constraint firstItem="YFk-Kp-yiT" firstAttribute="top" secondItem="egC-jp-wlM" secondAttribute="bottom" constant="8" id="rs5-si-7YO"/>
                                                     </constraints>
@@ -116,6 +117,12 @@
                                                 <constraint firstAttribute="trailing" secondItem="OoR-ck-Olt" secondAttribute="trailing" id="kRb-DD-gxZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="postAddress" destination="YFk-Kp-yiT" id="7Da-uy-PCo"/>
+                                            <outlet property="postImage" destination="GDQ-fy-5du" id="SPu-2c-xdf"/>
+                                            <outlet property="postTitle" destination="egC-jp-wlM" id="4w9-ce-j4R"/>
+                                            <outlet property="viewmapImage" destination="3AD-ZU-b8o" id="cCJ-4G-xc1"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -135,6 +142,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableview" destination="edi-Gn-pe4" id="yXv-L2-H4S"/>
                         <segue destination="gnt-bV-SBJ" kind="show" identifier="GotoMap" id="eYx-1q-bK7"/>
                     </connections>
                 </viewController>
