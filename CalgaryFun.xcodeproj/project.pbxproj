@@ -13,6 +13,7 @@
 		0A0709941DF5A48100CF5005 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A07098E1DF5A48100CF5005 /* GFGeoHashQuery.m */; };
 		0A0709951DF5A48100CF5005 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0709901DF5A48100CF5005 /* GFQuery.m */; };
 		0A84459F1E00235900787D37 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A84459E1E00235900787D37 /* PostCell.swift */; };
+		0A8445A21E002FE400787D37 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8445A11E002FE400787D37 /* DataService.swift */; };
 		0A88FE311DF7282E006D0172 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A88FE301DF7282E006D0172 /* MapVC.swift */; };
 		0A8BD72F1DF59A5700E4DCAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8BD72E1DF59A5700E4DCAC /* AppDelegate.swift */; };
 		0A8BD7311DF59A5700E4DCAC /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8BD7301DF59A5700E4DCAC /* TableVC.swift */; };
@@ -42,6 +43,7 @@
 		0A0709901DF5A48100CF5005 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		0A0709991DF5A56C00CF5005 /* CalgaryFun-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CalgaryFun-Bridging-Header.h"; path = "../../CalgaryFun-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A84459E1E00235900787D37 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		0A8445A11E002FE400787D37 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0A88FE301DF7282E006D0172 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		0A8BD72B1DF59A5700E4DCAC /* CalgaryFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalgaryFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8BD72E1DF59A5700E4DCAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,14 @@
 			path = Implementation;
 			sourceTree = "<group>";
 		};
+		0A8445A01E002FBD00787D37 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0A8445A11E002FE400787D37 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		0A88FE2D1DF726D6006D0172 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +164,7 @@
 		0A8BD72D1DF59A5700E4DCAC /* CalgaryFun */ = {
 			isa = PBXGroup;
 			children = (
+				0A8445A01E002FBD00787D37 /* Services */,
 				0A07097F1DF5A48100CF5005 /* GeoFire */,
 				0A88FE2F1DF726E6006D0172 /* Model */,
 				0A88FE2E1DF726DC006D0172 /* View */,
@@ -315,6 +326,7 @@
 				0ABF1A531DFADE1E00221288 /* CustomAnnotation.swift in Sources */,
 				0A0709931DF5A48100CF5005 /* GFGeoHash.m in Sources */,
 				0A8BD72F1DF59A5700E4DCAC /* AppDelegate.swift in Sources */,
+				0A8445A21E002FE400787D37 /* DataService.swift in Sources */,
 				0A0709911DF5A48100CF5005 /* GeoFire.m in Sources */,
 				0A88FE311DF7282E006D0172 /* MapVC.swift in Sources */,
 				0A0709941DF5A48100CF5005 /* GFGeoHashQuery.m in Sources */,

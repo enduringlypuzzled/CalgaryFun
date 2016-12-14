@@ -15,11 +15,25 @@ class TableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         tableview.delegate = self
         tableview.dataSource = self
+    
+
+        /*Database stuff - create user write user stuff
+        let id : String = "Stevo"
+        let user : String = "user"
+        let userData = ["provider": user.providerID]
+        DataService.ds.createFirbaseDBUser(uid: id, userData: userData)*/
+    
+        //Initialize listener for database changes 
+        DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+            print(snapshot.value)
+        
+        })
+    
     }
     
     override func viewDidAppear(_ animated: Bool) {
         //performSegue(withIdentifier: "GotoMap", sender: nil)
-    
+     
     }
 
     
