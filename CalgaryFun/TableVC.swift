@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 class TableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var posts = [Post]()
     
-   override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         tableview.delegate = self
         tableview.dataSource = self
@@ -22,12 +24,27 @@ class TableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let user : String = "user"
         let userData = ["provider": user.providerID]
         DataService.ds.createFirbaseDBUser(uid: id, userData: userData)*/
-    
-        //Initialize listener for database changes 
-        DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
-            print(snapshot.value)
+
+    DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+        //print(snapshot.value)
         
-        })
+        if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
+            for snap in snapshot {
+                print("SNAP: \(snap)")
+                if let postDict = snap.value as? Dictionary<String, AnyObject> {
+                    
+                    let key = snap.key
+                    let post = Post(postKey: key, postData: postDict)
+                    print("KEY: \(key)")
+                    self.posts.append(post)
+                }
+            }
+            
+        }
+    })
+
+    tableview.reloadData()
+    
     
     }
     
@@ -49,6 +66,11 @@ class TableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+       //let post = posts[indexPath.row]
+        //print("Stevo: \(post.address)")
+        
+        
         return tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
     }
     
