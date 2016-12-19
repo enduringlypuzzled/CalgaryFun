@@ -22,6 +22,7 @@
 		0A8BD7361DF59A5700E4DCAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8BD7351DF59A5700E4DCAC /* Assets.xcassets */; };
 		0A8BD7391DF59A5700E4DCAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8BD7371DF59A5700E4DCAC /* LaunchScreen.storyboard */; };
 		0A8BD7411DF59E8600E4DCAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A8BD7401DF59E8600E4DCAC /* GoogleService-Info.plist */; };
+		0AA21CCF1E082D6500AF6B8E /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA21CCE1E082D6500AF6B8E /* SignInVC.swift */; };
 		0ABF1A531DFADE1E00221288 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF1A521DFADE1E00221288 /* CustomAnnotation.swift */; };
 		8D165EE69C86508D430D8319 /* Pods_CalgaryFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D755847179F2DBE9C0F4C6 /* Pods_CalgaryFun.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		0A8BD7381DF59A5700E4DCAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A8BD73A1DF59A5700E4DCAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A8BD7401DF59E8600E4DCAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0AA21CCE1E082D6500AF6B8E /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		0ABF1A521DFADE1E00221288 /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		C1C04EA1D32FB824AB448711 /* Pods-CalgaryFun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalgaryFun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalgaryFun/Pods-CalgaryFun.debug.xcconfig"; sourceTree = "<group>"; };
 		C5D755847179F2DBE9C0F4C6 /* Pods_CalgaryFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalgaryFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +135,7 @@
 			children = (
 				0A8BD7301DF59A5700E4DCAC /* TableVC.swift */,
 				0A88FE301DF7282E006D0172 /* MapVC.swift */,
+				0AA21CCE1E082D6500AF6B8E /* SignInVC.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				0ABF1A531DFADE1E00221288 /* CustomAnnotation.swift in Sources */,
 				0A8561201E05673A0031B4C0 /* Post.swift in Sources */,
 				0A0709931DF5A48100CF5005 /* GFGeoHash.m in Sources */,
+				0AA21CCF1E082D6500AF6B8E /* SignInVC.swift in Sources */,
 				0A8BD72F1DF59A5700E4DCAC /* AppDelegate.swift in Sources */,
 				0A8445A21E002FE400787D37 /* DataService.swift in Sources */,
 				0A0709911DF5A48100CF5005 /* GeoFire.m in Sources */,
