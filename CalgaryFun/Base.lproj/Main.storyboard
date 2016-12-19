@@ -55,7 +55,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zgf-Vz-tPh">
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgi-Uc-jhE">
                                         <color key="backgroundColor" red="0.61568627450980395" green="0.75294117647058822" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
@@ -63,6 +63,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signinPressed:" destination="vrD-H1-IHb" eventType="touchUpInside" id="bWm-lF-gVm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -92,6 +95,10 @@
                             <constraint firstAttribute="trailing" secondItem="W2p-Mr-zdo" secondAttribute="trailing" id="lGq-P5-21Y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="yfw-aT-k7E" id="xrf-M9-Uh0"/>
+                        <outlet property="passwordField" destination="zgf-Vz-tPh" id="HKz-te-KRF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ymY-bG-RAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
